@@ -1,0 +1,46 @@
+<RestClientRequest>
+  <option name="biscuits">
+    <list />
+  </option>
+  <option name="httpMethod" value="POST" />
+  <option name="urlBase" value="http://localhost:4567" />
+  <option name="urlPath" value="api/ns/login" />
+  <option name="headers">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="Accept" />
+        <option name="value" value="*/*" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Cache-Control" />
+        <option name="value" value="no-cache" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="Authorization" />
+        <option name="value" value="Bearer f3f3712b-df67-4691-8bcf-335a5cd41c12" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parameters">
+    <list>
+      <KeyValuePair>
+        <option name="key" value="cid" />
+        <option name="value" value="2" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="title" />
+        <option name="value" value="&quot;test unread&quot;" />
+      </KeyValuePair>
+      <KeyValuePair>
+        <option name="key" value="content" />
+        <option name="value" value="&quot;unread 3&quot;" />
+      </KeyValuePair>
+    </list>
+  </option>
+  <option name="parametersEnabled" value="true" />
+  <option name="haveTextToSend" value="false" />
+  <option name="haveFileToSend" value="true" />
+  <option name="isFileUpload" value="false" />
+  <option name="textToSend" value="" />
+  <option name="filesToSend" value="" />
+</RestClientRequest>
