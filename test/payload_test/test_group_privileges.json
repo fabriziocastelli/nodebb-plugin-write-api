@@ -1,0 +1,12 @@
+{
+ "privileges" :[
+  "find",
+  "posts:edit",
+  "read",
+  "topics:read",
+  "topics:reply",
+  "upload:post:file",
+  "upload:post:image"],
+  "groups" : [ "8" ]
+
+}
