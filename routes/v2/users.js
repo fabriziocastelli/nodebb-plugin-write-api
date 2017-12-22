@@ -9,6 +9,7 @@ var Users = require.main.require('./src/user'),
 	utils = require('./utils'),
 	async = require.main.require('async');
 
+var sessionsharing = require('nodebb-plugin-session-sharing');
 
 module.exports = function(/*middleware*/) {
 	var app = require('express').Router();
@@ -18,10 +19,20 @@ module.exports = function(/*middleware*/) {
 			return false;
 		}
 
-		Users.create(req.body, function(err, uid) {
-			return errorHandler.handle(err, res, {
-				uid: uid
-			});
+		Users.create(req.body, function (err, uid) {
+			console.log("Creating USER", uid);
+			if (uid) {
+				var userData = req.body;
+				userData.id = uid;
+				sessionsharing.findOrCreateUser(userData, function (err, uid) {
+					console.log("MERGED user info", userData);
+					return errorHandler.handle(err, res, {
+						uid: uid
+					});
+				});
+			} else {
+				console.log("Creating USER - ERROR", err);
+			}
 		});
 	});
 

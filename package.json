@@ -27,7 +27,8 @@
   "dependencies": {
     "express": "^4.12.0",
     "jsonwebtoken": "^5.0.4",
-    "passport-http-bearer": "^1.0.1"
+    "passport-http-bearer": "^1.0.1",
+    "nodebb-plugin-session-sharing": "^4.0.0"
   },
   "nbbpm": {
     "compatibility": "^1.4.5"
