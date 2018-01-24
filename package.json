@@ -1,7 +1,7 @@
 {
-  "name": "nodebb-plugin-write-api",
-  "version": "5.0.4",
-  "description": "Write-enabled API for NodeBB",
+  "name": "nodebb-plugin-write-api-gift",
+  "version": "5.1.1",
+  "description": "Write-enabled API for NodeBB custom",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,7 +28,7 @@
     "express": "^4.12.0",
     "jsonwebtoken": "^5.0.4",
     "passport-http-bearer": "^1.0.1",
-    "nodebb-plugin-session-sharing": "^4.0.0"
+    "nodebb-plugin-session-sharing": "^4.2.1"
   },
   "nbbpm": {
     "compatibility": "^1.4.5"

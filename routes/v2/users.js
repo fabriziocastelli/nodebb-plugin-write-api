@@ -8,8 +8,13 @@ var Users = require.main.require('./src/user'),
 	auth = require('../../lib/auth'),
 	utils = require('./utils'),
 	async = require.main.require('async');
+debugger;
 
-var sessionsharing = require('nodebb-plugin-session-sharing');
+var sessionsharing = require.main.require('nodebb-plugin-session-sharing');
+console.log("TEST!!!");
+debugger;
+
+console.log(sessionsharing);
 
 module.exports = function(/*middleware*/) {
 	var app = require('express').Router();
