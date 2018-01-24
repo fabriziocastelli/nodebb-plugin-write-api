@@ -1,5 +1,5 @@
 {
-  "name": "nodebb-plugin-write-api-gift",
+  "name": "nodebb-plugin-write-api",
   "version": "5.1.1",
   "description": "Write-enabled API for NodeBB custom",
   "main": "index.js",
@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/julianlam/nodebb-plugin-write-api"
+    "type": "git"
   },
   "keywords": [
     "nodebb",
@@ -18,12 +17,7 @@
     "REST",
     "JSON"
   ],
-  "author": "Julian Lam <julian@nodebb.org>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/julianlam/nodebb-plugin-write-api/issues"
-  },
-  "homepage": "https://github.com/julianlam/nodebb-plugin-write-api",
   "dependencies": {
     "express": "^4.12.0",
     "jsonwebtoken": "^5.0.4",
